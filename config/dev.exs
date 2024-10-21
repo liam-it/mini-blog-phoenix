@@ -5,10 +5,14 @@ config :mini_blog, MiniBlog.Repo,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
-  database: "mini_blog_dev",
+  database: "mini-blog-db",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
+  # ssl: [
+  #   versions: [:"tlsv1.3"],
+  #   cacertfile: "priv/cert/db.pem"
+  # ]
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
